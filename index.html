@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>For Rashi 🌹</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+  <canvas id="petals" aria-hidden="true"></canvas>
+
+  <!-- 1. OPENING -->
+  <section id="open" class="screen active">
+    <p class="eyebrow">sirf tumhare liye</p>
+    <div class="rose" id="rose" role="button" tabindex="0" aria-label="Open">🌹</div>
+    <h1 class="script big">Hello, Rashi</h1>
+    <p class="lead">Ek chhoti si duniya banayi hai, bas meri Dolly ke naam ki.<br>Gulab pe tap karo, aur andar aao. ✨</p>
+    <button class="btn" data-next="portrait">Andar Aao 🌹</button>
+  </section>
+
+  <!-- 2. PORTRAIT -->
+  <section id="portrait" class="screen">
+    <p class="eyebrow">chapter one</p>
+    <h2 class="script">Meri Favourite Person ❤️</h2>
+    <div class="frame">
+      <img src="media/rashi_dp.jpg" alt="Rashi" />
+      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+    </div>
+    <p class="name">Rashi <span>✦</span> <small>aka Dolly</small></p>
+    <p class="lead narrow">Kuch log bas aise hote hain na, jinse baat karke din apne aap achha ho jaata hai. Meri toh wahi ho tum, meri Rashi. 🌷</p>
+    <button class="btn" data-next="smile">Aage 💫</button>
+  </section>
+
+  <!-- 3. STORY VIDEO -->
+  <section id="smile" class="screen">
+    <p class="eyebrow">chapter two</p>
+    <h2 class="script">Woh Pyaari Si Smile</h2>
+    <div class="vidwrap photo">
+      <img src="media/rashi_edit.jpg" alt="You &amp; Me, Forever Together, My Rashi" />
+    </div>
+    <p class="lead narrow">Sach bataun? Tumhari ek smile se mera poora din ban jaata hai. Itni pyaari ho tum ki bas. 💗</p>
+    <button class="btn" data-next="game">Aage 🎮</button>
+  </section>
+
+  <!-- 4. GAME MEMORIES -->
+  <section id="game" class="screen">
+    <p class="eyebrow">chapter three</p>
+    <h2 class="script">Hamari Game Wali Yaadein</h2>
+    <div class="shot">
+      <img src="media/sunset_art.jpg" alt="Sunset together" />
+      <p>Tum aur main, aur ek sunset. Bas aur kuch nahi chahiye. 🌅</p>
+    </div>
+    <div class="shot">
+      <img src="media/shot_sunset_walk.jpg" alt="Game moment" />
+      <p>Tumhe dekhte hi main jhuk jaata hoon. 😂💗</p>
+    </div>
+    <div class="shot">
+      <img src="media/shot_together.jpg" alt="Together" />
+      <p>Saath khade hain, bas yahi kaafi hai. 🌷</p>
+    </div>
+    <div class="shot">
+      <img src="media/shot_sea.jpg" alt="Sea view" />
+      <p>Samundar ke saamne tumhare saath baithna. 🌊</p>
+    </div>
+    <p class="lead narrow">Game mein bhi tum mere liye alag hi chamakti ho. Meri sabse pyaari squad mate, aur meri sabse favourite person. 🎮💞</p>
+    <button class="btn" data-next="notes">Aage 💌</button>
+  </section>
+
+  <!-- 5. NOTES -->
+  <section id="notes" class="screen">
+    <p class="eyebrow">chapter four</p>
+    <h2 class="script">Kuch Dil Ki Baatein</h2>
+    <div class="notes">
+      <article class="note">
+        <h3>Tumhari Company</h3>
+        <p>Pata hai, tumhare saath time kaise nikal jaata hai, samajh hi nahi aata. Baatein karte karte kab ghanta guzar jaata hai, pata hi nahi chalta. Aur mujhe ye bahut achha lagta hai. 🌙</p>
+      </article>
+      <article class="note">
+        <h3>Tumhari Hansi</h3>
+        <p>Jab tum hasti ho na, toh lagta hai sab kuch halka ho gaya. Din kitna bhi heavy ho, tumhari ek smile se theek ho jaata hai. Please hamesha hasti raho, meri jaan. ✨</p>
+      </article>
+      <article class="note">
+        <h3>Chhoti Chhoti Baatein</h3>
+        <p>Tumhari chhoti chhoti baatein, tumhara mazaak, tumhara ajeeb sa gussa, sab kuch yaad reh jaata hai. Tum woh ho jisse bhoolna namumkin hai. 💫</p>
+      </article>
+      <article class="note">
+        <h3>Ek Wish</h3>
+        <p>Bas itni si dua hai ki tumhari duniya hamesha khush rahe, aur tum jahan bhi jao, wahan sab tumhe utna hi pyaar aur izzat dein jitni tum deserve karti ho. 🌹</p>
+      </article>
+      <article class="note">
+        <h3>Ek Chhota Sa Promise</h3>
+        <p>Jab bhi mood kharab ho, ya bas baat karne ka mann ho, main yahin hoon. Chahe game ho, chat ho ya bekaar si gappe, tumhare liye hamesha time hai. Always & forever. 💗</p>
+      </article>
+    </div>
+    <button class="btn" data-next="voice">Last Surprise 🎧</button>
+  </section>
+
+  <!-- 6. VOICE -->
+  <section id="voice" class="screen">
+    <p class="eyebrow">last chapter</p>
+    <h2 class="script">Ek Awaaz Tumhare Liye</h2>
+    <div class="player">
+      <div class="disc" id="disc"><span>🌹</span></div>
+      <button class="play" id="playBtn" aria-label="Play">▶</button>
+      <div class="track"><div class="fill" id="fill"></div></div>
+      <p class="time"><span id="cur">0:00</span> / <span id="dur">0:00</span></p>
+      <audio id="voiceAudio" src="media/voice.mp3" preload="metadata"></audio>
+      <p class="time" id="voiceMsg" hidden>Voice note jaldi aa raha hai 🎧</p>
+    </div>
+    <p class="lead narrow">Headphones laga ke sunna, please. Ye sirf tumhare liye hai. 🎧💞</p>
+    <button class="btn" data-next="end">Aakhri Page 🌹</button>
+  </section>
+
+  <!-- 7. END -->
+  <section id="end" class="screen">
+    <h2 class="script big">Thank You, Rashi</h2>
+    <p class="lead narrow">Tum jaisi ho, waisi hi rehna. Pyaari, mazedaar aur sabse alag. Ye chhoti si website bas ye batane ke liye tha ki tum mere liye kitni special ho. 🌷</p>
+    <p class="lead narrow soft">Hamesha khush rehna, meri Rashi. Always &amp; Forever. 💗</p>
+    <div class="actions">
+      <button class="btn" id="heartBtn">Ek Gulab Bhejo 🌹</button>
+      <button class="btn ghost" data-next="open">Dobara Dekho ↺</button>
+    </div>
+    <p class="thanks" id="thanks"></p>
+    <p class="made">banaya hai ❤️ se, apni Rashi (Dolly) ke liye</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
